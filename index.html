@@ -1,7 +1,860 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<!doctype html>
+<html  data-template="home" class="has-no-js" lang="en-US">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-755402550');
+    </script>
+<style>@font-face {
+  font-family: League Spartan;
+  src: url(themes/LeagueSpartan-Bold.woff);
+  
+}
+
+</style>
+
+    
+    <title>Kulsoom Rizavi</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+<meta name="theme-color" content="#0E0B16">
+
+  <link rel="stylesheet" href="loader.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  
+<link rel="canonical" href="index.html" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","url":"https://homesociete.ca/","name":"Home Soci\u00e9t\u00e9","potentialAction":{"@type":"SearchAction","target":"https://homesociete.ca/search/{search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://homesociete.ca/","name":"Home Soci\u00e9t\u00e9"}</script>
+<meta name="google-site-verification" content="vsXUj8hyEx4sI3bwpu_WlylZH4l1SXOZY_2zvNj8Y0s" />
+
+<link rel='dns-prefetch' href='http://www.google.com/' />
+<link rel='dns-prefetch' href='http://code.jquery.com/' />
+<link rel='stylesheet' id='wp-block-library-css'  href='wordpress/wp-includes/css/dist/block-library/style.min9dff.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sage/main.css-css'  href='themes/homesociete/dist/styles/main.css' type='text/css' media='all' />
+			<script type="text/javascript">
+				var ajaxurl = 'wordpress/wp-admin/admin-ajax.html';
+			</script>
+              <script>
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('bm'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'data.json'
+    })
+  </script>
+  
+  <script>
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #d1d3d8 }";
+  document.body.appendChild(css);
+};
+</script>
+<style>.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}</style>
+</head>
+
+    <body class="home page app-data index-data singular-data page-data page-2-data page-front-page-data front-page-data">
+
+       
+        <div class="c-preloader">
+    <div class="c-preloader_anim" data-module="Preloader"></div>
+    <div class="c-preloader_background"></div>
+        
+        <div id="bm"></div>
+</div>
+
+        <div class="c-popup" data-module="Popup">
+    <div class="c-popup_background js-close"></div>
+    <div class="c-popup_inner">
+        <button class="c-popup_close o-link js-close" type="button">
+            Close
+        </button>
+        <article class="c-popup_content js-content">
+
+        </article>
+    </div>
+</div>
+ 
+ <div id="js-pjax-wrapper">
+     
+
+            <div class="js-pjax-container" data-template="home">
+
+                <header class="c-header -sticky js-header" style="background-color:rgba(30,30,30,0.8)">
+    <ul class="c-header_menu">
+          <li class="c-header_menu_item">
+            <a href="#home" class="no-transition js-scrollto" data-offset="60">
+              INTRO&emsp;.
+            </a>
+        </li>
+                <li class="c-header_menu_item">
+            <a href="#about" class="no-transition js-scrollto" data-offset="60">
+                MEET&emsp;ME&emsp;.
+            </a>
+        </li>
+                <li class="c-header_menu_item">
+            <a href="#brands" class="no-transition js-scrollto" data-offset="60">
+                MY&emsp;WORK&emsp;.
+            </a>
+        </li>
+                <li class="c-header_menu_item">
+            <a href="#contact" class="no-transition js-scrollto" data-offset="60">
+                CONTACT&emsp;.
+            </a>
+        </li>
+            </ul>
+    <a class="c-header_logo"><img src="themes/homesociete/dist/images/sprite.svg" height="80%"> </a>
+    <button class="c-header_burger u-none@from-small" type="button" data-module="NavButton"></button>
+</header>
+
+                
+
+<div class="o-scroll" data-horizontal data-module="Scroll">
+
+
+    <!-- Menu -->
+    <div class="o-scroll_section c-header_wrapper">
+        <span class="c-header_trigger js-animate" data-callback="trigger.Header()" data-repeat></span>
+        <header class="c-header js-header">
+    <ul class="c-header_menu">
+      <li class="c-header_menu_item">
+            <a href="#home" class="no-transition js-scrollto" data-offset="60">
+               INTRO&emsp;.
+            </a>
+        </li>
+                <li class="c-header_menu_item">
+            <a href="#about" class="no-transition js-scrollto" data-offset="60">
+                MEET&emsp;ME&emsp;.
+            </a>
+        </li>
+                <li class="c-header_menu_item">
+            <a href="#brands" class="no-transition js-scrollto" data-offset="60">
+                MY&emsp;WORK&emsp;.
+            </a>
+        </li>
+                <li class="c-header_menu_item">
+            <a href="#contact" class="no-transition js-scrollto" data-offset="60">
+                CONTACT&emsp;.
+            </a>
+        </li>
+             </ul>
+    <a class="c-header_logo"><img src="themes/homesociete/dist/images/sprite.svg" height="80%"> </a>
+            
+    <button class="c-header_burger u-none@from-small" type="button" data-module="NavButton"></button>
+</header>
+    </div>
+
+    <!-- Intro -->
+    <div class="o-scroll_section" id="home">
+        <section class="c-home-intro">
+            <div class="c-home-intro_summary js-animate u-text">
+                <p style="font-size:3.6vw; line-height:1; opacity:0.6">HELLO.<BR>MY NAME IS <strong>KULSOOM RIZAVI</strong>,<BR> AND I LOVE TO <br><STRONG>
+               <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ " DESIGN.", " EDIT.", " INNOVATE.", " INVENT.", " CREATE!" ]'></span></STRONG>
+                </p>
+            </div>
+            <div class="c-home-intro_lines">
+                <div class="c-home-intro_lines_item c-home-intro_lines_split js-animate" data-speed="1.5" data-position="top" data-module="SplittedText" data-delay="0.05" data-horizontal  style=" -webkit-text-fill-color: transparent; -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #01FFC3">Hey.</div>
+                <div class="c-home-intro_lines_item">
+                    <div class="c-home-intro_logo_wrapper js-animate">
+                        <figure class="c-home-intro_logo js-animate" data-speed="1.5" data-position="top" data-delay="0.03">
+                            <svg aria-hidden="true" role="img"> <use href="themes/homesociete/dist/images/sprite.svg#logo" xlink:href="themes/homesociete/dist/images/sprite.svg#logo"></use> </svg>                        </figure>
+                    </div>
+                    <span class="c-home-intro_lines_split" data-module="SplittedText" data-horizontal style=" -webkit-text-fill-color: transparent; -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #01FFC3">I am</span>
+                </div>
+                <div class="c-home-intro_lines_item c-home-intro_lines_split js-animate" data-speed="3" data-position="top" data-module="SplittedText" data-delay="0.07" data-horizontal>Kulsoom</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Slider -->
+    <div class="o-scroll_section -under"  id="about">
+        <div class="c-slider" data-module="Slider">
+            <div class="c-slider_background js-slider js-animate" data-speed="-1">
+                <div class="c-slider_background_item js-slider-item is-active">
+                    <div class="c-slider_background_item_inner o-image_wrapper js-animate">
+                        <!-- 1080px * 1080px -->
+                        <figure class="o-image">
+                            <div class="c-slider_background_item_image js-lazy-background" data-style="background-image:url(img/1.png)"></div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="c-slider_background_item js-slider-item">
+                    <div class="c-slider_background_item_inner o-image_wrapper js-animate">
+                        <!-- 1080px * 1080px -->
+                        <figure class="o-image">
+                            <div class="c-slider_background_item_image js-lazy-background" data-style="background-image:url(img/2.png)"></div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="c-slider_background_item js-slider-item">
+                    <div class="c-slider_background_item_inner o-image_wrapper js-animate">
+                        <!-- 1080px * 1080px -->
+                        <figure class="o-image">
+                            <div class="c-slider_background_item_image js-lazy-background" data-style="background-image:url(img/3.png)"></div>
+                        </figure>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="c-slider_counter_wrapper">
+                <div class="c-slider_counter">
+                    <div class="c-slider_counter_list js-slider">
+                        <div class="c-slider_counter_list_item js-slider-item is-active">
+                            1
+                        </div>
+                        <div class="c-slider_counter_list_item js-slider-item">
+                            2
+                        </div>
+                        <div class="c-slider_counter_list_item js-slider-item">
+                            3
+                        </div>
+                       
+                    </div>
+                    <div class="c-slider_counter_base js-length">
+                        3
+                    </div>
+                </div>
+                <div class="c-slider_counter_line"></div>
+            </div>
+            <div class="o-cursor js-cursor">
+                <div class="o-cursor_inner">
+                    <svg aria-hidden="true" role="img"> <use href="themes/homesociete/dist/images/sprite - Copy.svg"></use> </svg>                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About block -->
+    <div class="o-scroll_section">
+        <section class="c-block-content">
+            <div class="c-block-content_summary js-animate">
+                <p style="color:#01FFC3">I am...</p>
+
+            </div>
+                        <div class="c-block-content_text u-text js-animate">
+                            <p>Presently, I am a student of grade XI<SUP>th</SUP> reading English, History, Political Science, Mathematics, Art and Computer Science.<br>
+                            I am a very creative individual who believes in the goodness of serving humanity. I want to utilize my creativity to make a positive difference in the international communities, to express the stories of the underrepresented and the oppressed, to help my nation and its neighbors, and to paint a lasting impact on the world. To fulfill my humanitarian aspirations, I want to study International Relations, Law and Design. Eventually, I hope to work for an international humanitarian organization (such as the United Nations) and help design their campaigns to spread the message of peace, mutual acceptance, and respect.</p><br><br>
+                           <h2> My hobbies and skills...</h2>
+<P>	Graphics Designing<br>&emsp;-(Adobe InDesign CC, Illustrator CC, Photoshop CC)<BR>
+ Website Designing<br>&emsp;-(Adobe Dreamweaver CC, HTML, CSS, JavaScript)<BR>
+Video Editing, Film Making, Animation<br>&emsp;-(Adobe Premiere Pro CC, After Effects CC)<BR>
+3-D Origami<BR>
+ Debating<BR>
+Painting<BR>
+Programming (Languages Known : Java, Python)</p>
+
+                        </div>
+             <BR><BR><BR>
+            <p class="c-block-content_label">
+                Meet Me .
+            </p>
+        </section>
+    </div>
+    <!-- Promo block -->
+    
+    <!-- Brand list -->
+    <div class="o-scroll_section" id="brands">
+        <div class="c-brand-list_wrapper js-animate" data-module="BrandList">
+            <ul class="c-brand-list">
+                                <li class="c-brand-list_item">
+                    <a href="#brand_101" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_101">Posture Correcting Chair
+                    </a>
+                                    </li>
+                                <li class="c-brand-list_item">
+                    <a href="#brand_103" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_103">
+                       Detection of Dysgraphia
+                    </a>
+                                    </li>
+                                            <li class="c-brand-list_item">
+                    <a href="#brand_alive" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_ALIVE">
+                       Short Social Film, 'Alive?'
+                    </a>
+                                    </li>
+               
+                               </li>
+                                <li class="c-brand-list_item">
+                    <a href="#brand_105" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_105">
+                    LMGMUN </a>
+                                        <ul class="c-brand-list_sublist">
+                                                <li class="c-brand-list_sublist_item">
+                            <a href="#brand_105_1" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_105_1">
+                                Newsletters
+                            </a>
+                        </li>
+                                                <li class="c-brand-list_sublist_item">
+                            <a href="#brand_105_2" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_105_2">
+                               Videos
+                            </a>
+                        </li>
+                                                <li class="c-brand-list_sublist_item">
+                            <a href="#brand_105_3" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_105_3">
+                               Website
+                            </a>
+                        </li>
+                     
+                      
+                       </ul>
+                                    </li>
+                                                   <li class="c-brand-list_item">
+                    <a href="#brand_106" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_106">
+             Fabular
+                    </a>
+                                    </li>
+                                      <li class="c-brand-list_item">
+                    <a href="#brand_107" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_107">
+             BDazzle
+                    </a>
+                                    </li>
+                                    
+                              <!--  <li class="c-brand-list_item">
+                    <a href="#brand_108" class="js-link js-scrollto no-transition" data-offset="60" data-id="brand_108">Other Work
+                    </a></li> -->
+                            
+                            </ul>
+          
+            <p class="c-brand-list_label">
+               My Work .
+            </p>
+        </div>
+    </div>
+
+
+        <div class="o-scroll_section" id="brand_101">
+        <section class="c-brand">
+            <h1 class="c-brand_name" data-module="Rail" data-rail-speed="3">
+                <span>Posture Correcting Chair</span>
+            </h1>
+            <div class="c-brand_images">
+                <div class="o-layout c-brand_images_grid">
+             
+                    <div class="o-layout_item u-2/3@from-medium c-brand_images_col -bottom -big">
+                        <div class="c-brand_image_wrapper o-image_wrapper js-animate">
+                            <figure class="c-brand_image o-image js-lazy-background" data-style="background-image:url('img/Posture Correcting Chair.png');"></figure>
+                        </div>
+                    </div>
+                    <div class="o-layout_item u-1/3@from-medium c-brand_images_col -bottom -small js-animate" data-speed="-0.8">
+                        <div class="c-brand_image_wrapper o-image_wrapper js-animate">
+                            <figure class="c-brand_image o-image js-lazy-background" data-style="background-image:url('img/CHAIR.jpg');"></figure>
+                        </div>
+                    </div>
+                     
+                </div>
+                                <figure class="c-brand_logo_wrapper -bottom">
+                    <div class="c-brand_logo"><p align="center"><strong>POSTURE <br>CORRECTING<br> CHAIR</strong></p> </div>
+                </figure>
+                            </div>
+                          
+                            
+            <div class="c-brand_content -top" style="z-index:100">
+            
+                <div class="c-brand_content_inner">
+                    <p class="u-text js-animate c-brand_content_text">
+Chairs are the most common furniture on which people sit, work and take rest. Poor posture can lead to postural instability (e.g., lack of balance) as a person ages. Posture Correcting Chair was a simple innovation developed in 2013, which by the use of bio-sensors monitored a person's posture and further alerted the user if he/she was sitting in the wrong posture. This innovation was acknowledged on a national level by the National Innovation Foundation (NIF). <br>
+AWARDS : 'IGNITE 2013' Award received at the hands of former President of India, late Dr. APJ Abdul Kalam.<br>
+'9th Biennial Award for Grassroots Innovation' received at the hands of former President of India, Dr. Pranab Mukherjee.
+                    </p>
+                                      <a href="https://drive.google.com/open?id=1uMtobNEziI3z3p2TY-cydWlfERe75wMN" target="_blank" class="c-brand_content_link o-link js-animate">Read Report of Project
+                    </a>
+            </div>
+            </div>
+            <p class="c-block-content_label">
+                01
+            </p>
+        </section>
+    </div>
+            <div class="o-scroll_section" id="brand_103">
+        <section class="c-brand">
+            <h1 class="c-brand_name" data-module="Rail" data-rail-speed="3" style=" -webkit-text-fill-color: transparent; -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #01FFC3">
+                <span>Detection of Dysgraphia</span>
+            </h1>
+            <div class="c-brand_images">
+               
+                    
+                    <div class="resp-container">
+                        <iframe class="resp-iframe" src="https://www.youtube.com/embed/D_kS0Oos_vY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                <figure class="c-brand_logo_wrapper -top">
+                    <div class="c-brand_logo"><p align="center"><strong>DETECTION <br>OF<br> DYSGRAPHIA</strong></p> </div>
+                        
+                </figure>
+                            </div>
+            <div class="c-brand_content -bottom">
+                <div class="c-brand_content_inner">
+                    <p class="u-text js-animate c-brand_content_text">
+                    Dysgraphia is a learning disorder viewed largely as a handwriting impairment. Unfortunately, symptoms of dysgraphia are often overlooked by educators, and students with the condition are viewed as simply being unmotivated or messy. Several tests exist to diagnose dysgraphia however, the major drawbacks of these tests are subjective examination, time-consuming and use of standardized text.<br> 'Detection of Dysgraphia' was a project aimed at combating these drawbacks. The project made use of Cloud AutoML Vision Object Detection technology and an artificial intellgience model was developed aimed at identifying 6 traits of Dysgraphia. The project is still under development with features such as additional indentification traits as well as detection in different languages being explored.<br>
+AWARDS : Winner of 'Google Code to Learn 2019'.
+                    </p>
+                                        <a href="https://drive.google.com/open?id=1qd08H3ycm6Hg5of96eXfzqR1iaQefxHc" target="_blank" class="c-brand_content_link o-link js-animate">Read Report of Project
+                    </a>
+                                    </div>
+            </div>
+            <p class="c-block-content_label">
+                02
+            </p>
+        </section>
+    </div>
+       <div class="o-scroll_section" id="brand_alive">
+        <section class="c-brand has-subbrands">
+            <h1 class="c-brand_name" data-module="Rail" data-rail-speed="1">
+                <span>ALIVE?</span>
+            </h1>
+            <div class="c-brand_images">
+                <div class="o-layout c-brand_images_grid">
+                    <div class="o-layout_item u-1/3@from-medium c-brand_images_col -bottom -small js-animate" style="z-index:100">
+                        <div class="c-brand_image_wrapper o-image_wrapper js-animate">
+                             <figure class="c-brand_image o-image js-lazy-background" data-style="background-image:url('img/duemila.png');"></figure>
+                    </div>
+                    </div>
+                    <div class="o-layout_item u-2/3@from-medium c-brand_images_col -top -big js-animate" data-speed="-0.8">
+                        <div class="c-brand_image_wrapper o-image_wrapper js-animate">
+                          <figure class="c-brand_image o-image js-lazy-background" data-style="background-image:url('img/DUEMILA30.png');"></figure>
+                        </div>
+                    </div>
+                </div>
+                                  <figure class="c-brand_logo_wrapper -top">
+                    <div class="c-brand_logo"><p align="center"><strong>SOCIAL<br>FILM<br> 'ALIVE?'</strong></p> </div>
+                        
+                </figure>
+                            </div>
+            <div class="c-brand_content -bottom">
+                <div class="c-brand_content_inner">
+                    <p class="u-text js-animate c-brand_content_text">
+                   Related by means of poetry, music and interviews, 'Alive?' is the story of Assamese migrants living in the Hindi speaking belt of India. Exploited financially by the locals, the people live in extreme conditions of social exclusion and poverty. 
+The theme, 'I am like the dust' is a comparison between the migrants and dust, which is blown away from everywhere and has no home of its own. The people question the meaning of their lives repeatedly while their misery goes on, unnoticed and unseen by the world. The film ends questioning whether such a life is a life at all.<br>
+AWARDS : The film was chosen as a finalist in the 'Dreamers category' in Duemila30 Youth Film Festival for a Sustainable Revolution in collaboration with the United Nations Information Centre. In addition to the screenings of films, the festival also consisted of workshops with Oscar-winning directors, panel discussion on 2030 Sustainable Development Goals with UNRIC- Italia and Casa Emergency (Italian Humanitarian Association) as well as the opportunity to work with social incubators like FabriQ.
+                    </p>
+                                        <a href="https://www.youtube.com/embed/v6sWWewmzu8" target="_blank" class="c-brand_content_link o-button js-animate">
+                        Watch the Film
+                    </a>
+                                    </div>
+            </div>
+            <p class="c-block-content_label">
+                03
+            </p>
+        </section>
+    </div>
+    
+    
+    
+            <div class="o-scroll_section" id="brand_105">
+        <section class="c-brand has-subbrands -dark">
+            <h1 class="c-brand_name" data-module="Rail" data-rail-speed="1">
+                <span>LMGMUN</span>
+            </h1>
+            <div class="c-brand_images">
+                <div class="o-layout c-brand_images_grid">
+                    <div class="o-layout_item u-2/3@from-medium c-brand_images_col -bottom -standard">
+                        <div class="c-brand_image_wrapper o-image_wrapper js-animate">
+                            <figure class="c-brand_image o-image js-lazy-background" data-style="background-image:url('img/LMG.jpg');"></figure>
+                        </div>
+                    </div>
+                    <div class="o-layout_item u-1/3@from-medium c-brand_images_col -top -standard js-animate" data-speed="-0.8">
+                        <div class="c-brand_image_wrapper o-image_wrapper js-animate">
+                            <figure class="c-brand_image o-image js-lazy-background" data-style="background-image:url('img/LMG.png');"></figure>
+                        </div>
+                    </div>
+                </div>
+                                <figure class="c-brand_logo_wrapper -top">
+                    <div class="c-brand_logo"><p align="center"><strong>LMG<BR>MODEL<BR>UN</strong></p> 
+                       </div>
+                </figure>
+                            </div>
+            <div class="c-brand_content -bottom">
+                <div class="c-brand_content_inner">
+                    <p class="u-text js-animate c-brand_content_text">
+                        La Martiniere Girls' Model United Nations is an annual simulation of the United Nations held at La Martiniere Girls' College, Lucknow attended by more than 500 delegates from around Asia. I have been associated with the organization of this event since its 3<sup>rd</sup> Edition in various capacities.<br>
+                        POSITIONS HELD:
+                        <br>
+                        2017 : GRAPHICS DESIGNER<BR>
+                        2018 : EDITOR OF INTERNATIONAL PRESS<BR>
+                        2019 : UNDER SECRETARY-GENERAL FOR TECHNICAL OPERATIONS<BR>
+                       2020 : UNDER SECRETARY-GENERAL FOR COMMUNICATIONS AND PUBLIC INFORMATION
+                    </p>
+                     
+                                    </div>
+            </div>
+            <p class="c-block-content_label">
+                04
+            </p>
+        </section>
+    </div>
+    
+    
+        <div class="o-scroll_section c-block-details_wrapper">
+                <section class="c-block-details js-animate" id="brand_105_1">
+            <div class="c-block-details_inner">
+                <h1 class="c-block-details_title">
+                   Newsletters
+                </h1>
+                <div class="c-block-details_content">
+                    <p class="u-text">The International Press of La Martiniere Girls' Model United Nations is a team dedicated to bringing to you content from around the world with its annual newsletter, "The Spectator". This organ of the MUN circuit aims to compile global news and present the same with a dash of tasteful humour and imagery. <br>I have headed the International Press in the capacities of 'Head of Graphics' and 'Editor', and have been responsible for designing all of their 2017 and 2018 issues.</p>
+                </div>
+                <footer class="c-block-details_footer">
+                    <div class="o-layout -bottom">
+                         <div class="o-layout_item u-1/2">
+                                     <br><br><br> <br><br>                    <a href="https://drive.google.com/open?id=1kxJv9UDgMviXWZhnQZOE4BOtP9mVHD8V" target="_blank" class="c-block-details_footer_link o-link">
+                                Read the Newsletters
+                            </a>
+                                                    </div>
+                       
+                        <figure class="c-block-details_footer_image_wrapper o-image_wrapper js-animate">
+                            <div class="o-image">
+                                <div class="c-block-details_image js-animate js-lazy-background" data-style="background-image:url('img/spectator.jpg')" data-speed="-0.5"></div>
+                            </div>
+                        </figure>
+                    </div>
+                </footer>
+            </div>
+        </section>
+                <section class="c-block-details js-animate" id="brand_105_2">
+            <div class="c-block-details_inner">
+                <h1 class="c-block-details_title">
+                    Videos
+                </h1>
+                <div class="c-block-details_content">
+                    <p class="u-text">I have worked on various opening videos, after movies and trailers for the event.</p>
+                </div>
+                <footer class="c-block-details_footer">
+                    <div class="o-layout -bottom">
+                        <div class="o-layout_item u-1/2">
+                             <br><br><br> <br><br>             <a href="https://www.youtube.com/embed/FWeOpQZXmOc" target="_blank" class="c-block-details_footer_link o-link">
+                             2018 | Opening Video
+                            </a>
+                                          <a href="https://www.youtube.com/embed/uTuz_45OwPI" target="_blank" class="c-block-details_footer_link o-link">
+                             2019 | Opening Video
+                              
+                            </a>     
+                                    <a href="https://www.youtube.com/embed/kU7-QXt0W_M" target="_blank" class="c-block-details_footer_link o-link">
+                             2019 | Closing Video
+                              
+                            </a> 
+                                 <a href="https://www.youtube.com/embed/auZlDwM3078" target="_blank" class="c-block-details_footer_link o-link">
+                              2019 | Trailer I
+                              
+                            </a>           
+                               <a href="https://www.youtube.com/embed/mmScsFn68Ug" target="_blank" class="c-block-details_footer_link o-link">
+                              2019 | Trailer II
+                              
+                            </a>   
+                            
+                             <a href="
+                            https://www.youtube.com/embed/Z6JR2cHHL2E" target="_blank" class="c-block-details_footer_link o-link">
+                              2020 | Trailer I
+                              
+                            </a>         
+                              </div>
+                        
+                        <figure class="c-block-details_footer_image_wrapper o-image_wrapper js-animate">
+                            <div class="o-image">
+                                <div class="c-block-details_image js-animate js-lazy-background" data-style="background-image:url('img/Untitled.png')" data-speed="-0.5"></div>
+                            </div>
+                        </figure>
+                    </div>
+                </footer>
+            </div>
+        </section>
+                <section class="c-block-details js-animate" id="brand_105_3">
+            <div class="c-block-details_inner">
+                <h1 class="c-block-details_title">
+                    Website
+                </h1>
+                <div class="c-block-details_content">
+                    <p class="u-text">I have coded and designed the official LMGMUN website.</p>
+                </div>
+                <footer class="c-block-details_footer">
+                    <div class="o-layout -bottom">
+                        <div class="o-layout_item u-1/2">
+                                         <br><br><br>    <a href="https://lmgmun.org" target="_blank" class=" o-link">
+                                Visit Website
+                            </a>
+                                                    </div>
+                        <figure class="c-block-details_footer_image_wrapper o-image_wrapper">
+                              <div class="c-block-details_image">
+                                <video width="100%" style="display:block; margin:0 auto; background-color:black" poster="img/LMGWEB.png" autoplay loop muted playsinline>
+
+  <source src="img/We're live..mp4" type="video/mp4"></video></div>
+           </footer>
+            </div>
+        </section>
+  
+            <div class="o-scroll_section" id="brand_106">
+        <section class="c-brand">
+            <h1 class="c-brand_name" data-module="Rail" data-rail-speed="1">
+                <span>Fabular</span>
+            </h1>
+            <div class="c-brand_images">
+                <div class="o-layout c-brand_images_grid">
+                      
+                    <div class="resp-container">
+                        <iframe class="resp-iframe" src="https://www.youtube.com/embed/wym__rZTpRk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        
+                  </div>
+                    
+                                <figure class="c-brand_logo_wrapper -top">
+                    <div class="c-brand_logo">
+                        <br><p align="center"><strong>FABULAR</strong></p> 
+
+                    </div>
+                </figure>
+                    
+                </div>
+                    
+            <div class="c-brand_content -bottom">
+                <div class="c-brand_content_inner">
+                
+                           <img src="img/Fabular-01.png">
+                    <p class="u-text js-animate c-brand_content_text">
+                    
+                     This project was developed by me as a hypothetical start-up concept.<br> Fabular is a mobile based application that serves as a market place for all services related to event planning. It helps you organize your events with the best services at the best rates from around the city! Fabular aims to take off your burden so that you can relax and enjoy your event as much as your guests!<br>
+                     AWARDS : 'Fabular' was declared the winner of 'Comfest 2017 - Metier Projet', a national level business plan presentation competition for students.
+                     
+                    </p>
+                                        <a href="https://drive.google.com/open?id=1xXaULNOawKoisuG4-4ZIKItLAIIJd8x7" target="_blank" class="c-brand_content_link o-link js-animate">
+                        Read Report of Project
+                    </a>
+                                    </div>
+            </div>
+            <p class="c-block-content_label">
+                05
+            </p>
+        </section>
+    </div>
+            <div class="o-scroll_section" id="brand_107">
+        <section class="c-brand">
+            <h1 class="c-brand_name" data-module="Rail" data-rail-speed="1" style=" -webkit-text-fill-color: transparent; -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #01FFC3">
+                <span>BDazzle</span>
+            </h1>
+            <div class="c-brand_images">
+                <div class="o-layout c-brand_images_grid">
+                  <div class="o-layout_item u-1/3@from-medium c-brand_images_col -bottom -standard js-animate" data-speed="-0.8" style="z-index:100">
+                        <div class="c-brand_image_wrapper o-image_wrapper js-animate">
+                            <figure class="c-brand_image o-image js-lazy-background" data-style="background-image:url('img/bdazzle.png');"></figure>
+                        </div>
+                    </div>
+                    <div class="o-layout_item u-2/3@from-medium c-brand_images_col -top -standard">
+                        <div class="c-brand_image_wrapper o-image_wrapper js-animate">
+                            <video width="100%" style="display:block; margin:0 auto; background-color:black" poster="img/LMGWEB.png" autoplay loop muted playsinline>
+
+  <source src="img/BD.mp4" type="video/mp4"></video>
+                        </div>
+                    </div>
+                  
+                </div>
+                                <figure class="c-brand_logo_wrapper -top">
+                    <div class="c-brand_logo">
+                        <br><p align="center"><strong>BDazzle</strong></p> 
+                    </div>
+                </figure>
+                            </div>
+            <div class="c-brand_content -top">
+                <div class="c-brand_content_inner">
+                    <p class="u-text js-animate c-brand_content_text">
+                    This project was developed by me as a hypothetical start-up concept.<br> BDazzle is a mobile-based application that aids you to customize products
+according to your tastes. The objective of BDazzle is to “Customize E-commerce,” by using the power of business and technology to strengthen communities
+and empower people around the world to make their own choices. BDazzle serves as a platform for connecting creative
+entrepreneurs with thoughtful consumers looking for items that are intended to be
+special.<br>
+                     AWARDS : 'BDazzle' was declared the runner-up of 'Comfest 2019 - Metier Projet', a national level business plan presentation competition for students.
+                    </p>
+                                <a href="https://drive.google.com/open?id=1_Dp71ybLAxq5RMuqyWbhUM3E188YzOMn" target="_blank" class="c-brand_content_link o-link js-animate">
+                        Read Report of Project
+                    </a>
+                                    </div>
+            </div>
+            <p class="c-block-content_label">
+                06
+            </p>
+        </section>
+    </div> -->
+        
+    <div class="o-scroll_section">
+        <div class="c-contact" id="contact">
+            <div class="c-block-content_summary js-animate">
+                <p>Contact Me .</p>
+
+            </div>
+                      
+            <div class="c-contact_infos" id="newsletter">
+      
+                <div class="o-layout">  
+                
+     
+                                
+                    <div class="c-contact_col js-animate o-layout_item u-1/3@from-medium" data-module="Form" id="newsletter-mobile">
+                            <p style="color:#01FFC3">
+                              <STRONG>  Send me a message .</STRONG>
+                            </p><BR><BR>
+                            <form
+  action="https://formspree.io/xbjgrvqa"
+  method="POST"
+>
+
+
+
+  <label>
+    Your E-mail<br><br><input type="text" name="_replyto" placeholder="__________________">
+  </label>
+  <label><BR><BR>
+    Your Message<br><br><textarea name="message" placeholder="__________________" rows="10"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit" class="c-brand_content_link o-button js-animate">Send</button>
+</form>
+                          <br><br><br>
+                            
+                    </div>
+                </div>
+            </div>
+            <ul id="menu-social" class="c-contact_socials" aria-label="Social Media">
+           <li> <a class="" target="_blank" href="https://www.facebook.com/kulsoom.rizavi.71">Facebook</a></li>
+           
+           <li> <a class="" target="_blank" href="https://www.instagram.com/kulsoomrizavi/">Instagram</a></li>
+            
+            </ul>            <p class="c-block-content_label">
+                Contact
+            </p>
+        </div>
+    </div>
+
+    <div class="o-scroll_section">
+        <div class="c-end">
+            
+            <div class="c-end_item js-animate" data-speed="3" data-delay="0.05" data-horizontal data-position="bottom">
+              <img src="themes/homesociete/dist/images/sprite.svg">        </div>
+      
+        </div>
+    </div>
+
+</div> 
+
+
+            </div>
+        </div>
+
+        
+        <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+		
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script>window.jQuery || document.write('<script src="themes/homesociete/dist/scripts/jquery.min.js"><\/script>')</script>
+<script type='text/javascript' src='themes/homesociete/dist/scripts/vendors.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var hsData = {"ajaxUrl":"\/wordpress\/wp-admin\/admin-ajax.php","spriteUrl":"https:\/\/homesociete.ca\/themes\/homesociete\/dist\/images\/sprite.svg","loaderUrl":"https:\/\/homesociete.ca\/themes\/homesociete\/resources\/assets\/jsons\/loader.json","l10n":{"errorTryAgain":"An error occurred. Please try again.","errorTryLater":"An error occurred. Please try later.","unknownError":"Something went wrong."},"recaptcha":{"siteKey":"6Leiv5cUAAAAADJzrKq3_Nqsmq75Qm-bQaZ5UKDf"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='themes/homesociete/dist/scripts/app.js'></script>
+
+  <script src="lottie.js"></script>
+  <script src="loader.js"></script>
+        <script>
+
+            // var iterator = 0;
+            // var scripts = [
+            //     'https://homesociete.ca/themes/homesociete/dist/scripts/vendors.js',
+            //     'https://homesociete.ca/themes/homesociete/dist/scripts/app.js'
+            // ];
+
+            // function dynamicallyLoadScript(url) {
+
+            //     var script = document.createElement('script');
+            //     script.type= 'text/javascript';
+            //     script.src = url;
+            //     document.body.appendChild(script);
+
+            //     script.onload = function() {
+            //         if(iterator < scripts.length - 1) {
+            //             iterator++;
+            //             dynamicallyLoadScript(scripts[iterator]);
+            //         }
+            //     }
+            // }
+
+            // window.onload = function(e) {
+            //     dynamicallyLoadScript(scripts[iterator]);
+            // }
+
+        </script>
+    </body>
+
 </html>
